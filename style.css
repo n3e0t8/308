@@ -1,0 +1,143 @@
+body {
+    margin: 0;
+}
+
+main {
+    width: 1024px;
+    min-height: 100vh;
+    border: 2px black solid;
+    margin: 0px auto;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.parent {
+    background-color: gray;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    background-image: url(https://avatars.githubusercontent.com/u/141396633?v=4);
+    background-size: cover;
+    border-radius: 191px 191px;
+    border: 2px gray solid;
+}
+
+.child {
+    position: absolute;
+    top: 150px;
+    left: 150px;
+    background-color: red;
+    width: 50px;
+    height: 50px;
+    border: 2px white;
+    border-radius: 9999px;
+}
+
+.child .text {
+    position: absolute;
+    top: 33%;
+    left: 27%;
+}
+
+p {
+    margin: 0;
+}
+
+.row {
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0px 20px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 16px;
+    width: 900px;
+    height: 1000px;
+    margin-top: 1.5rem;
+}
+
+.gallery .image {
+    width: 100%;
+    height: 100%;
+    background-color: gray;
+}
+
+#extend-col {
+    grid-column: span 2;
+    height: 100%;
+}
+
+#extend-row {
+    grid-row: span 2;
+    width: 100%;
+}
+
+#profile-link {
+    color: black;
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#profile-link:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+.gallery .image:nth-child(1) {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSAm3e-twX9GkjokuACk3t_yi-opg0MaZTCg&usqp=CAU);
+    background-position: center;
+    background-size: cover;
+}
+
+.gallery .image:nth-child(2) {
+    background-image: url(https://cdn.donmai.us/original/8f/05/8f0572a9f85d0a5be710b7fba583ef77.png);
+    background-position: center;
+    background-size: cover;
+}
+.gallery .image:nth-child(3) {
+    background-image: url(https://cdn.donmai.us/original/43/5e/435e60d9a9923228631cc2788953d61f.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.gallery .image:nth-child(4) {
+    background-image: url(https://cdn.donmai.us/original/4f/79/4f79a48b82844b7626675c149c667105.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.gallery .image:nth-child(5) {
+    background-image: url(https://static.zerochan.net/Hiodoshi.Ao.full.4019179.jpg);
+    background-position: top;
+    background-size: cover;
+}
+.gallery .image:nth-child(6) {
+    background-image: url(https://embed.pixiv.net/artwork.php?illust_id=111578975);
+    background-position: center;
+    background-size: cover;
+}
+.gallery .image:nth-child(7) {
+    background-image: url(https://cdn.donmai.us/original/9f/ae/9fae6b6131a248e9cb9fc90913db322b.png);
+    background-position: center;
+    background-size: cover;
+}
+.gallery .image:nth-child(8) {
+    background-image: url(https://i.namu.wiki/i/cIDgs4NX4ZriAkg6n58j4J9sZhEUSIs_SO-IL2u7cx--t-RFHzKCC7e7dgLgaggOC9jvKWlXv0pD5GmRkRlh4w.webp);
+    background-position: center;
+    background-size: cover;
+}
+.gallery .image:nth-child(9) {
+    background-image: url(https://cdn.donmai.us/sample/d2/7f/__hiodoshi_ao_hololive_and_1_more_drawn_by_mary_is_mine__sample-d27f4dcd20fb1ae2faac106d23a67476.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.gallery .image:nth-child(10) {
+    background-image: url(https://cdn.donmai.us/original/f1/6d/f16dce695a2e6a35410d51090461c0a1.jpg);
+    background-position: center;
+    background-size: cover;
+}

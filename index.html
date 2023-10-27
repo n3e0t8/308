@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script>
+        function setName () {
+            const nameField = document.getElementById("username");
+            const name = nameField.value;
+            const title = document.getElementById("profile-link");
+            title.innerText = name + " Profile";
+        }
+
+        function setImage() {
+            const imagefield  =document.getElementById("imageURL");
+            const picture = imagefield.value;
+            profileImage.style.backgroundImage = `url(${picture})`;
+        }
+    </script>
+</head>
+<body>
+    <main>
+        <div id="profileImage" class="parent">
+            <div class="child">
+                <div class="text">99+</div>
+            </div>
+        </div>
+        <a id="profile-link" href="https://github.com/n3e0t8">N3JXD Profile</a>
+        <div class="row">
+            <p>Set pfn</p>
+            <input id="username" type="text" />
+            <button onclick="setName()">set</button>
+        </div>
+        <div class="row">
+            <p>Set pfp</p>
+            <input id="imageURL" type="text" />
+            <button onclick="setImage()">set</button>
+        </div>
+        <div class="gallery">
+            <div class="image"></div>
+            <div class="image"></div>
+            <div id="extend-row" class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+            <div id="extend-col" class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+        </div>
+    </main>
+</body>
+</html>
